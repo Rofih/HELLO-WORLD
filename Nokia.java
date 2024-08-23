@@ -26,11 +26,11 @@ Scanner input=new Scanner(System.in);
 System.out.print("Select a button");
 int mainMenu=input.nextInt();
    
-Switch(mainMenu);{
+switch (mainMenu){
 case 1: {
 	System.out.print("Phone book");
 	int Menu=input.nextInt();
-      Switch(Menu) {
+      switch (Menu) {
             case 1: System.out.print("Search");
             break;
             case 2:System.out.print("Service Nos.");
@@ -48,7 +48,7 @@ case 1: {
             case 8: {
 		  System.out.print("Options");
 		  int options=input.nextInt();
-                  Switch(Options) {
+                  switch (options) {
                          case 1: 
 				System.out.print("Type of view");
                          	break;     
@@ -57,9 +57,11 @@ case 1: {
                          	break;
                   }
             }
-            case 9:System.out.print("Speed dials");
+            case 9:
+                  System.out.print("Speed dials");
             break;
-            case 10:System.out.print("Voice Tags");
+            case 10:
+                   System.out.print("Voice Tags");
             break;
 	}
 }
@@ -67,32 +69,41 @@ break;
 case 2:{
       System.out.print("Messages");
       int Messages=input.nextInt();
-      Switch(Messages){
-         case  1:System.out.print("Write messages");
+      switch (Messages) {
+         case  1:
+                System.out.print("Write messages");
           break;     
-          case 2:System.out.print("Inbox");
+          case 2:
+                System.out.print("Inbox");
           break;     
-          case 3:System.out.print("Outbox");
+          case 3:
+                System.out.print("Outbox");
           break;     
-          case 4:System.out.print("Picture messages");
+          case 4:
+                System.out.print("Picture messages");
           break;     
-          case 5:System.out.print("Templates");
+          case 5:
+                System.out.print("Templates");
           break;     
-          case 6:System.out.print("Smileys");
+          case 6:
+                System.out.print("Smileys");
           break;
           case 7:{
                 System.out.print("Messages settings");
-                int Messages settings=input.nextInt();
-                Switch(Messagessettings){
+                int Messagessettings=input.nextInt();
+                switch (Messagessettings) {
                       case 1:{
                             System.out.print("Set 1");
                             int Set1=input.nextInt();
-                            Switch(Set1);{
-                               case 1:System.out.print("Message centre number");
+                            switch (Set1){
+                               case 1:
+                                     System.out.print("Message centre number");
                                break;    
-                               case 2:System.out.print("Messages sent as");
+                               case 2:
+                                     System.out.print("Messages sent as");
                                break;
-                               case 3:System.out.print("Message validity");
+                               case 3:
+                                     System.out.print("Message validity");
                                break;
 
 
@@ -103,79 +114,101 @@ break;
                       case 2: {
                             System.out.print("Common");
                             int Common=input.nextInt();
-                            Switch(Common){
-                                  case 1:System.out.print("Delivery reports");
+                            switch (Common) {
+                                  case 1:
+                                        System.out.print("Delivery reports");
                                   break; 
-                                  case 2:System.out.print("Reply via same centre");
+                                  case 2:
+                                        System.out.print("Reply via same centre");
                                   break;
-                                  case 3:System.out.print("Character support");
+                                  case 3:
+                                        System.out.print("Character support");
                                   break;
                                   
 }
 }
 }
 }
-        case 8:System.out.print("Info service");
+        case 8:
+              System.out.print("Info service");
         break; 
-        case 9:System.out.print("Voice mailbox number");
+        case 9:
+              System.out.print("Voice mailbox number");
         break;
-        case 10:System.out.print("Service command editor");
+        case 10:
+               System.out.print("Service command editor");
         break;
 }
 }
-case 3:System.out.print("Chat");
+case 3:
+      System.out.print("Chat");
 break;
 case 4:{
       System.out.print("Call register");
       int Callregister=input.nextInt();
-      Switch(Callregister){
-            case 1:System.out.print("Missed calls");
+      switch (Callregister) {
+            case 1:
+                  System.out.print("Missed calls");
             break; 
-            case 2:System.out.print("Received calls");
+            case 2:
+                  System.out.print("Received calls");
             break;
-            case 3:System.out.print("Dialled numbers");
+            case 3:
+                  System.out.print("Dialled numbers");
             break;
-            case 4:System.out.print("Erase recent call lists");
+            case 4:
+                  System.out.print("Erase recent call lists");
             break;
             case 5:{ 
                  System.out.print("Show call duration");
                  int Showcallduration=input.nextInt(); 
-                 Switch(Showcallduration){
-                        case 1:System.out.print("Last call duration");
+                 switch (Showcallduration) {
+                        case 1:
+                              System.out.print("Last call duration");
                         break;
-                        case 2:System.out.print("All call's duration");
+                        case 2:
+                              System.out.print("All call's duration");
                         break;
-                        case 3:System.out.print("Received call's duration");
+                        case 3:
+                              System.out.print("Received call's duration");
                         break;
-                        case 4:System.out.print("Dialled call's duration");
+                        case 4:
+                              System.out.print("Dialled call's duration");
                         break;
-                        case 5:System.out.print("Clear times");
+                        case 5:
+                              System.out.print("Clear times");
                         break;
 }
 }       
             case 6:{
                   System.out.print("Show call costs");
                   int Showcallcost=input.nextInt(); 
-                  Switch(Showcallcosts){
-                        case 1:System.out.print("Last call cost");
+                  switch (Showcallcost) {
+                        case 1:
+                              System.out.print("Last call cost");
                         break;
-                        case 2:System.out.print("All call's cost");
+                        case 2:
+                              System.out.print("All call's cost");
                         break;
-                        case 3:System.out.print("Clear counters");
+                        case 3:
+                              System.out.print("Clear counters");
                         break;
 }
 }
             case 7:{
                   System.out.print("Call cost settings");
                   int Callcostsettings=input.nextInt(); 
-                  Switch(Callcostsettings){
-                        case 1:System.out.print("Call cost limit");
+                  switch (Callcostsettings) {
+                        case 1:
+                              System.out.print("Call cost limit");
                         break; 
-                        case 2:System.out.print("Show costs in");
+                        case 2:
+                              System.out.print("Show costs in");
                         break;
 }
 }                      
-            case 8:System.out.print("Prepaid credit");
+            case 8:
+                  System.out.print("Prepaid credit");
             break;                              
 }
 }
@@ -183,24 +216,33 @@ break;
 case 5:{
       System.out.print("Tones");
       int Tones=input.nextInt();
-      Switch(Tones){
-            case 1:System.out.print("Ringing tone");
+      switch (Tones) {
+            case 1:
+                  System.out.print("Ringing tone");
             break;  
-            case 2:System.out.print("Ringing volume");
+            case 2:
+                  System.out.print("Ringing volume");
             break; 
-            case 3:System.out.print("Incoming call alert");
+            case 3:
+                  System.out.print("Incoming call alert");
             break; 
-            case 4:System.out.print("Composer");
+            case 4:
+                  System.out.print("Composer");
             break; 
-            case 5:System.out.print("Message alert tone");
+            case 5:
+                  System.out.print("Message alert tone");
             break; 
-            case 6:System.out.print("Keypad tones");
+            case 6:
+                  System.out.print("Keypad tones");
             break; 
-            case 7:System.out.print("Warning and game tones");
+            case 7:
+                  System.out.print("Warning and game tones");
             break; 
-            case 8:System.out.print("Vibrating alert");
+            case 8:
+                  System.out.print("Vibrating alert");
             break; 
-            case 9:System.out.print("Screen saver");
+            case 9:
+                  System.out.print("Screen saver");
             break; 
 }
 }
@@ -208,133 +250,166 @@ break;
 case 6:{
       System.out.print("Settings");
       int Settings=input.nextInt();
-      Switch(Settings){
-            case 1:System.out.print("Callsettings");{
-                  Switch(Callsettings){
-                         case 1:System.out.print("Automatic redial");
+      switch (Settings) {
+            case 1:
+                  System.out.print("Callsettings");
+                  int Callsettings=input.nextInt();                                   {
+                  switch (Callsettings) {
+                         case 1:
+                               System.out.print("Automatic redial");
                          break; 
-                         case 2:System.out.print("Speed dialling");
+                         case 2:
+                               System.out.print("Speed dialling");
                          break; 
-                         case 3:System.out.print("Call waiting options");
+                         case 3:
+                               System.out.print("Call waiting options");
                          break; 
-                         case 4:System.out.print("Own number sending");
+                         case 4:
+                               System.out.print("Own number sending");
                          break; 
-                         case 5:System.out.print("Phone line in use");
+                         case 5:
+                               System.out.print("Phone line in use");
                          break; 
-                         case 6:System.out.print("Automatic answer");
+                         case 6:
+                               System.out.print("Automatic answer");
                          break; 
 }
 }  
             case 2:{
                   System.out.print("Phone settings");
                   int Phonesettings=input.nextInt();    
-                  Switch(Phonesettings){
-                         case 1:System.out.print("Language");
+                  switch (Phonesettings) {
+                         case 1:
+                               System.out.print("Language");
                          break; 
-                         case 2:System.out.print("Cell info display");
+                         case 2:
+                               System.out.print("Cell info display");
                          break; 
-                         case 3:System.out.print("Welcome note");
+                         case 3:
+                               System.out.print("Welcome note");
                          break; 
-                         case 4:System.out.print("Network selection");
+                         case 4:
+                               System.out.print("Network selection");
                          break; 
-                         case 5:System.out.print("Lights");
+                         case 5:
+                               System.out.print("Lights");
                          break; 
-                         case 6:System.out.print("Confirm SIM service actions");
+                         case 6:
+                               System.out.print("Confirm SIM service actions");
                          break; 
 }
 }
             case 3:{
                   System.out.print("Security settings");
                   int Securitysettings=input.nextInt();    
-                  Switch(Securitysettings){
-                         case 1:System.out.print("PIN code request");
+                  switch (Securitysettings) {
+                         case 1:
+                               System.out.print("PIN code request");
                          break; 
-                         case 2:System.out.print("Call barring service");
+                         case 2:
+                               System.out.print("Call barring service");
                          break; 
-                         case 3:System.out.print("Fixed dialling");
+                         case 3:
+                               System.out.print("Fixed dialling");
                          break; 
-                         case 4:System.out.print("Closed user group");
+                         case 4:
+                               System.out.print("Closed user group");
                          break; 
-                         case 5:System.out.print("Phone security");
+                         case 5:
+                               System.out.print("Phone security");
                          break; 
-                         case 6:System.out.print("Change access codes");
+                         case 6:
+                               System.out.print("Change access codes");
                          break; 
 }
 }
-            case 4:System.out.print("Restore factory settings");
+            case 4:
+                  System.out.print("Restore factory settings");
             break;       
 }
 }
 break;
-case 7:System.out.print("Call divert");
+case 7:
+      System.out.print("Call divert");
 break;
-case 8:System.out.print("Games");
+case 8:
+      System.out.print("Games");
 break;
-case 9:System.out.print("Calculator");
+case 9:
+      System.out.print("Calculator");
 break;
-case 10:System.out.print("Reminders");
+case 10:
+       System.out.print("Reminders");
 break;
 case 11:{
        System.out.print("Clock");
        int Clock=input.nextInt();
-       Switch(Clock){
-                         case 1:System.out.print("Alarm clock");
+       switch (Clock) {
+                         case 1:
+                               System.out.print("Alarm clock");
                          break; 
-                         case 2:System.out.print("Clock settings");
+                         case 2:
+                               System.out.print("Clock settings");
                          break; 
-                         case 3:System.out.print("Date setting");
+                         case 3:
+                               System.out.print("Date setting");
                          break; 
-                         case 4:System.out.print("Stopwatch");
+                         case 4:
+                               System.out.print("Stopwatch");
                          break; 
-                         case 5:System.out.print("Countdown timer");
+                         case 5:
+                               System.out.print("Countdown timer");
                          break;
-                         case 6:System.out.print("Auto update of date and time");
+                         case 6:
+                               System.out.print("Auto update of date and time");
                          break; 
 }
 }
 break;
-case 12:System.out.print("Profiles");
+case 12:
+       System.out.print("Profiles");
 break;
-case 13:System.out.print("SIM services");
-break;
-
-
-
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+case 13:
+       System.out.print("SIM services");
+break;          }
 
 
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
