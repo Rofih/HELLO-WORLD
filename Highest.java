@@ -1,6 +1,6 @@
-import java.util.Scanner
+
 import java.util.Scanner;
-public class Lowest{
+public class Highest{
    public static main void(String[] args){
 
 

@@ -1,15 +1,12 @@
+import java.util.Scanner;
 public class Patterns{
   public static void main(String[] args){
-    System.out.print("Pattern A\n*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *");
-    System.out.print("\nPattern B\n* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*");
-    
-    System.out.print("\nPattern C\n          *\n        * *\n      * * *\n    * * * *\n  * * * * *\n* * * * * *\n");
-
-    System.out.print("\nPattern D\n* * * * * *\n  * * * * *\n    * * * * \n      * * *\n        * *\n          *");
-
-
-
-
+    Scanner input=new Scanner(System.in);
+    for(int count=0;count<6 ;count++){
+       for(int value=0;value<count;value++)
+         {System.out.print("*");}
+         System.out.print("*");
+                                     }
 
 
 

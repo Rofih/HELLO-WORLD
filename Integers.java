@@ -3,11 +3,11 @@ public class Integers{
   public static void main(String[] args){
     Scanner input=new Scanner(System.in);
       System.out.print("Enter the first number:");
-      int value1=input.nextInt();
+      int value1 = input.nextInt();
       System.out.print("Enter the second number:");
-      int value2=input.nextInt();
+      int value2 = input.nextInt();
       System.out.print("Enter the third number:");
-      int value3=input.nextInt();
+      int value3 = input.nextInt();
      
        value1 = smallest;
       if(value2<value1)
