@@ -33,9 +33,4 @@ public class NokiaRofih{
 	int mainMenu=input.nextInt();
 }
 
-		
-
-		
-
-
 }
