@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import java.util.Scanner;
 public class NokiaV2{
 public static void main(String[] rofih){
@@ -398,7 +391,8 @@ break;          }
 
 
 
-public static void gotoMenu(){String button="""
+public static void gotoMainmenu(String button){
+String button="""
 Welcome to your Nokia phone
 1->Phone book
 2->Messages
@@ -424,12 +418,94 @@ int mainMenu=input.nextInt();
 }
 
 
+public static void gotoPhonebook(){
+switch (mainMenu){
+case 1: { 
+	System.out.print("Phone book");
+	int Menu=input.nextInt();
+      switch (Menu) {
+            case 1: System.out.print("Search");
+            break;
+            case 2:System.out.print("Service Nos.");
+            break;
+            case 3:System.out.print("Add name");
+            break;
+            case 4:System.out.print("Erase");
+            break;
+            case 5:System.out.print("Edit");
+            break;
+            case 6:System.out.print("Assign tone");
+            break;
+            case 7:System.out.print("Send b'card");
+            break;
+            case 8: 
+		  
+                  System.out.print("Options");
+		  int options=input.nextInt();
+                  switch (options) {
+                         case 1: 
+				System.out.print("Type of view");
+                         	break;     
+                         case 2:
+				System.out.print("Memory status");
+                         	break;
+                  }
+            }
+            case 9:
+                  System.out.print("Speed dials");
+            break;
+            case 10:
+                   System.out.print("Voice Tags");
+            break;
+	}
+break;
+ gotoMainmenu(String button);
+}
 
 
+public static void gotoMenu(){
+      int Menu=input.nextInt();
+      switch (Menu) {
+            case 1: System.out.print("Search");
+            break;
+            case 2:System.out.print("Service Nos.");
+            break;
+            case 3:System.out.print("Add name");
+            break;
+            case 4:System.out.print("Erase");
+            break;
+            case 5:System.out.print("Edit");
+            break;
+            case 6:System.out.print("Assign tone");
+            break;
+            case 7:System.out.print("Send b'card");
+            break;
+            
+}
 
 
-
-
+public static void gotoOptions(){
+		  
+}System.out.print("Options");
+		  int options=input.nextInt();
+                  switch (options) {
+                         case 1: 
+				System.out.print("Type of view");
+                         	break;     
+                         case 2:
+				System.out.print("Memory status");
+                         	break;
+                  }
+            }
+            case 9:
+                  System.out.print("Speed dials");
+            break;
+            case 10:
+                   System.out.print("Voice Tags");
+            break;
+	}
+break;
+}
 
 
 

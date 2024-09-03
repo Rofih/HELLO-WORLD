@@ -1,0 +1,25 @@
+import java.util.Scanner:
+public class GasMilage{
+	public static void main(String[] args){
+           Scanner input=new Scanner(System.in);
+           System.out.print("Enter your account number:");
+           int account=input.nextInt();
+           
+           
+           System.out.println("Enter balance at the beginning of the month:");
+           int mile=input.nextInt();
+           System.out.println("Enter the total charges of items thos:");
+           int gallon=input.nextInt();
+           int milesPerGallon=miles/gallon:
+
+
+
+
+
+
+
+
+
+        
+	}
+}
