@@ -23,7 +23,12 @@ public class Pizza{
                  case 1:
                         {if(number<=sapaSize)
                 {System.out.print(price1);}
-           }
+                  if(number%sapaSize)
+      
+
+
+
+                                            }
 
 
           

@@ -1,6 +1,8 @@
 public class trianglePattern{
   public static void main(String[] args){
-  multiplyStar();
+  Pattern();
+  Pattern2();
+   
  }
 
      public static void printStar(){
@@ -13,7 +15,7 @@ public class trianglePattern{
 
    public static void multiplyStar(){
      for(int count=1;count<=5;count++)
-         System.out.print(printStar());
+         printStar();
          Space();
    } 
    
