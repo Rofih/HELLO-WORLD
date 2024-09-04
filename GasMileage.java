@@ -4,8 +4,8 @@ public class GasMileage{
            Scanner input=new Scanner(System.in);
            System.out.print("Enter the number of trips:");
            int trip = input.nextInt();
-           int totalgallon=0;
-           int totalmiles=0;
+           int totalMilesPerGallon = 0;
+           
            for(int triper=0;triper<trip;triper++){
            System.out.println("Enter the miles driven:");
            int mile = input.nextInt();
@@ -15,18 +15,14 @@ public class GasMileage{
            //gallon+=1;
            float milesPerGallon = mile/gallon;
            System.out.println(milesPerGallon);
-           //int totalmiles=0;
+
+	   totalMilesPerGallon += milesPerGallon;
+           
            //totalmiles+=mile;
            //System.out.println(totalmiles);
 
-
-
-
-
-
-
-
-
         }
+
+           System.out.printf("the total miles per gallon is %d",totalMilesPerGallon);
 	}
 }
