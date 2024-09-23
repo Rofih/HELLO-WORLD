@@ -5,9 +5,9 @@ public class  XandO{
 		patterns[0][1]='o';
 		patterns[0][2]='x';
 
-		patterns[1][0]='x';
+		patterns[1][0]='o';
 		patterns[1][1]='o';
-		patterns[1][2]='x';
+		patterns[1][2]='o';
 
 		patterns[2][0]='x';
 		patterns[2][1]='o';
