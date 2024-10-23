@@ -3,7 +3,15 @@ import java.util.Scanner;
 public class MensturationApp{
 	
 	public static void information(){
+		
 		Scanner input = new Scanner(System.in);
+		try {
+
+		System.out.print("Welcome to MenstralApp,Do you want to learn more about menstral cycle?,if YES enter 1 then if NO enter 0");
+		int info = input.nextInt();
+		if(info==1){
+		 menstralInformation();
+		}
 		System.out.print("Please enter the date of your last menstural flow in format(yyyy-mmm-dd) :");
 		String flowDate = input.next();
 		LocalDate lastFlowDate = LocalDate.parse(flowDate);
@@ -42,7 +50,9 @@ public class MensturationApp{
 			int answer2 = input.nextInt();
 			
 		}
-		
+		}catch(Exception e){
+			System.out.print("Invalid input: "+ message.e);
+			}
 		
 	}
 	public static LocalDate calculateFlow(String thatDate,int cycle){   
@@ -69,6 +79,54 @@ public class MensturationApp{
 		LocalDate date = LocalDate.parse(thatDate);
 		LocalDate play = date.plusDays(12);
 		return play;
+
+	}
+	public static void menstralInformation(){
+		String info = '''
+		Menstruation is a natural biological process in females, part of the reproductive cycle. Here's an overview:
+
+		Phases of Menstruation:
+
+		1. Menstruation (Days 1-5): Uterine lining sheds, resulting in bleeding.
+		2. Follicular Phase (Days 6-14): Hormones stimulate follicle growth, preparing for ovulation.
+		3. Ovulation (Day 14): Release of an egg from the ovary.
+		4. Luteal Phase (Days 15-28): Hormones prepare the uterus for potential pregnancy.
+
+		Menstrual Cycle Length:
+
+		- Average: 28 days
+		- Normal range: 21-35 days
+		- Irregular cycles: Variations in length or frequency
+	
+		Menstrual Symptoms:
+
+		- Cramping (dysmenorrhea)
+		- Bloating
+		- Mood swings
+		- Fatigue
+		- Breast tenderness
+
+		Menstrual Products:
+
+		- Sanitary pads
+		- Tampons
+		- Menstrual cups
+		- Period panties
+
+		Menstrual Health:
+
+		- Hygiene: Change products regularly
+		- Nutrition: Balanced diet, iron-rich foods
+		- Exercise: Regular physical activity
+		- Mental well-being: Stress management, self-care
+
+		Common Menstrual Disorders:
+
+		- Amenorrhea (absent periods)
+		- Dysmenorrhea (painful periods)
+		- Endometriosis
+		'''';
+		System.out.print(info);
 
 	}
 }
