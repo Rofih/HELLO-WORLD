@@ -51,7 +51,7 @@ public class MensturationApp{
 			
 		}
 		}catch(Exception e){
-			System.out.print("Invalid input: "+ message.e);
+			System.out.print("Invalid input: "+ e.getMessage);
 			}
 		
 	}
