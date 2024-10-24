@@ -35,7 +35,7 @@ public class StudentGrade{
 		}
 		for(int student = 0;student<array.length;student++){
 			for(int index = 0;index<numberOfSubjects;index++){
-				System.out.println( "Student" + (student+1)+" "+array[student][index]+ " "+totals[student]+" "+averages[student]+" ");
+				System.out.println( "Student" + (student+1)+" "+array[student][index]+ " "+totals[student]+" "+averages[student]+"\t ");
 			}
 		System.out.println();
 		}
