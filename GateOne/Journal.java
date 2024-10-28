@@ -29,7 +29,7 @@ public class Journal{
 		return address;
 	}
 	public void editAddress(String newAddress){
-		String temp = newAdress;
+		String temp = newAddress;
 		newAddress = address;
 		address = temp;
 	}
