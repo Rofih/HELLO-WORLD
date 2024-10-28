@@ -16,7 +16,6 @@ public class PhoneBook{
 	public static String createContact(){
 		Scanner input = new Scanner(System.in);
 
-		Journal journal = new Journal();
 		System.out.print("pls enter name:");
 		String name = input.nextLine();
 
@@ -29,10 +28,8 @@ public class PhoneBook{
 		System.out.print("pls enter email:");
 		String email = input.nextLine();
 
-		journal.setName(name);
-		journal.setAddress(homeAddress);
-		journal.setTelephone(number);
-		journal.setEmail(email);
+		Journal journal = new Journal(name,homeAddress,number,email);
+		
 
 		String message = "well done contact saved";
 		return message;
